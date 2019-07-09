@@ -1,11 +1,21 @@
-version: 2
-jobs: 
-  build:
+version: 2 
+jobs:
+  build: 
     docker:
-      - image: circleci/ruby:2.4.1
-    steps:
-      - checkout
-      - run: echo "abhishek"
-        
-      
+      - image: circleci/ruby:2.4.1 
+    steps: 
+      - checkout 
+      - run: echo "build task"
+  test: 
+    docker: 
+      - image: circleci/ruby:2.4.1 
+    steps: 
+      - checkout 
+      - run: echo "test task" 
+workflows: 
+  version: 2 
+  build_and_test: 
+   jobs: 
+     - build:
+     - test:
       
