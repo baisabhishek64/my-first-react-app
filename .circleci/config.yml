@@ -1,10 +1,11 @@
 version: 2
 jobs: 
     one:
-      docker:
-        - image: ruby/2.4.1
-      steps:
-        - checkout
-        - run: echo "abhishek"
+        docker:
+            - image: ruby/2.4.1
+        steps:
+            - checkout
+            - run: echo "abhishek"
+        
       
       
