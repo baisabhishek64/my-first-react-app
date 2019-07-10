@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter suite tests Counter rendered properly 1`] = `
+Array [
+  <div>
+    0
+    <br />
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Increase
+    </button>
+  </div>,
+]
+`;
